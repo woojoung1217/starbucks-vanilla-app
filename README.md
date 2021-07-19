@@ -30,3 +30,4 @@
 ## gsap -> https://cdnjs.com/libraries/gsap
 
 ## swiper js -> https://swiperjs.com/ 
+- vertical 수직슬라이드 생성 
