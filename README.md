@@ -26,5 +26,6 @@
 <meta property="twitter:image" content="./images/starbucks_seo.jpg" />
 <meta property="twitter:url" content="https://starbucks.co.kr" />
 ```
-## Js 개발환경(gsap)사용 //
+## Js 개발환경(gsap)사용 
 https://cdnjs.com/libraries/gsap
+https://swiperjs.com/
