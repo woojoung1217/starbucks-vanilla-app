@@ -1,7 +1,7 @@
 /* COMMON */
 
 body{
-  height: 3000px;
+  
   color: #333;
   font-size: 16px;
   font-weight: 400;
@@ -71,6 +71,36 @@ a{
   color: #333;
   background-color:#fff;  
 }
+
+.back-to-position {
+  opacity: 0;
+  transition: 1s;
+}
+.back-to-position.to-right{
+  transform: translateX(-150px);
+}
+.back-to-position.to-left {
+  transform: translateX(150px);
+}
+.show .back-to-position {
+  opacity: 1;
+  transform: translateX(0);
+}
+.show .back-to-position.delay-0 {
+  transition-delay:0s;
+}
+.show .back-to-position.delay-1 {
+  transition-delay: .3s;
+}
+
+.show .back-to-position.delay-2 {
+  transition-delay: .6s;
+}
+.show .back-to-position.delay-3 {
+  transition-delay: .9s;
+}
+
+
 /* header  */
 header{
   width: 100%;
@@ -581,4 +611,219 @@ position: relative;
   left: 0;
   width: 100%;
   height: 100%;
+}
+#player {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left:0;
+}
+
+.youtube .inner {
+  height: 700px;
+
+}
+.youtube .floating1 {
+  position: absolute;
+  top:50px;
+  left: 0;
+}
+.youtube .floating2 {
+  position: absolute;
+  top:350px;
+  left: 150px;
+}
+
+
+/* SEASON PRODUCT */
+
+.season-product {
+  background-image: url('../images/season_product_bg.jpg');
+}
+
+.season-product .inner{
+  height: 400px;
+ 
+}
+.season-product .floating3 {
+  position: absolute;
+  top:-200px;
+  right: 0;
+}
+
+.season-product .text-group {
+  position: absolute;
+  top:110px;
+  right: 100px;
+}
+.season-product .text-group .title{
+  margin-bottom: 10px;
+}
+
+.season-product .text-group .description {
+  margin-bottom: 15px;
+}
+
+.season-product .text-group .more{
+
+}
+
+/* resever coffe */
+
+.reserve-coffe {
+  background-image: url("../images/reserve_bg.jpg");
+}
+
+.reserve-coffe .inner {
+  height: 400px;
+}
+
+.reserve-coffe .reserve-logo {
+  position: absolute;
+  top: 110px;
+  left: 0;
+
+}
+
+.reserve-coffe .text-group {
+  position:absolute;
+  top:124px;
+  left: 208px;
+
+}
+.reserve-coffe .product {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+/* pick your favorite */
+
+.pick-your-favorite {
+  background-image: url('../images/favorite_bg.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.pick-your-favorite .inner{
+  padding: 110px 0;
+}
+
+.pick-your-favorite .text-group{
+  margin-left: 100px;
+  width: 362px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+.pick-your-favorite .text-group .title{
+  margin-bottom: 40px;
+  
+}
+.pick-your-favorite .text-group .description{
+  margin-bottom: 40px;
+}
+
+/* RESERVE STORE */
+
+.reserve-store {
+  background-image: url('../images/reserve_store_bg.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.reserve-store .inner {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+}
+
+.reserve-store .medal{
+  width: 334px;
+  height: 334px;
+  perspective: 600px;
+}
+
+.reserve-store .medal .front,
+.reserve-store .medal .back {
+  width: 334px;
+  height: 334px;
+  backface-visibility: hidden;
+  transition: 1s;
+} 
+.reserve-store .medal .front{ 
+  position: absolute;
+  transform: rotateY(0deg);
+}
+.reserve-store .medal:hover .front{ 
+  transform: rotateY(180deg);
+}
+
+.reserve-store .medal .back { 
+  transform: rotateY(-180deg);
+}
+.reserve-store .medal:hover .back { 
+  transform: rotateY(0deg);
+}
+
+.reserve-store .medal .back .btn {
+  position: absolute;
+  top: 240px;
+  left: 0;
+  right: 0;
+  margin: auto; 
+}
+
+/* FIND THE STORE */
+
+.find-store {
+  background-image: url('../images/find_store_bg.jpg');
+}
+.find-store .picture{
+  border-radius: 50%;
+  box-shadow: 2px 2px 8px rgba(0,0,0,.5);
+  position: absolute;
+}
+
+.find-store .inner {
+  height: 400px;
+}
+.find-store .texture1 {
+  position: absolute;
+  top:0;
+  left:400px
+}
+
+.find-store .texture2 {
+  bottom:0;
+  right: 0px;
+}
+
+.find-store .picture1 {
+  top:-60px;
+  left:0;
+}
+.find-store .picture2 {
+  position: absolute;
+  top:150;
+  left:250px
+}
+.find-store .text-group {
+  position: absolute;
+  top:120px;
+  left: 550px;
+}
+
+.find-store .text-group .title {
+  margin-bottom: 20px;
+}
+.find-store .text-group .description{
+  margin-bottom: 20px;
 }

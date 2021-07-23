@@ -92,3 +92,40 @@ promotionToggleBtn.addEventListener('click',function(){
     promotionEl.classList.remove('hide');
   }
 });
+// random 숫자 생성
+function random(min, max) {
+  // `.toFixed()`를 통해 반환된 문자 데이터를,
+  // `parseFloat()`을 통해 소수점을 가지는 숫자 데이터로 변환
+  return parseFloat((Math.random() * (max - min) + min).toFixed(2))
+}
+
+
+ // 영상 이미지 움직임 요소 
+function floatingObject(slector , delay ,size) {
+  gsap.to(
+    slector, random(1.5,2.5),
+    {
+      opacity:.1,
+      y:size,    
+      repeat : -1, // 무한 반복 
+      yoyo:true,
+      ease: Power1.easeInOut,
+      delay :random(0, delay)
+    } 
+  );
+}
+
+floatingObject('.floating1',1 ,15);
+floatingObject('.floating2',.5 ,15);
+floatingObject('.floating3',1.5 ,20);
+
+const spyEls = document.querySelectorAll('section.scroll-spy');
+spyEls.forEach(function (spyEl) {
+  new ScrollMagic
+    .Scene({
+      triggerElement: spyEl,   //보여짐 여부를 감시
+      triggerHook:.8
+    })
+    .setClassToggle(spyEl ,'show')
+    .addTo(new ScrollMagic.Controller());
+});
