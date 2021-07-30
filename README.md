@@ -28,7 +28,7 @@
 ```
 ## Js 개발환경 
 ## gsap -> https://cdnjs.com/libraries/gsap
-
+- 화면 요소 애니메이션
 ## swiper js -> https://swiperjs.com/ 
 - vertical 수직슬라이드 생성 
 
