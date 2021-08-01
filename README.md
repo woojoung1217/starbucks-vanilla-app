@@ -3,7 +3,7 @@
 
 
 
-## 오픈 그래프(The Open Graph protocol)
+## 오픈 그래프 (The Open Graph protocol)
 ```html
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Starbucks" />
