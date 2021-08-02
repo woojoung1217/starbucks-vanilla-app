@@ -36,4 +36,6 @@
 - 페이지 내 배너 동영상 출력 
 
 ## ScrollMagic js -> https://cdnjs.com/libraries/ScrollMagic
-- 화면 요소 순차적 출력 
+- 화면 요소 순차적 출력
+## ScrollToPlugIn -> https://cdnjs.com/libraries/ScrollMagic
+- 화면 최 상단으로 이동
