@@ -19,6 +19,7 @@ searchInputEl.addEventListener('blur',function(){
 }); // 요소가 블러 처리 되면서 빈 화면이 나온다.
 
 const badgeEl = document.querySelector('header .badges');
+const toTopEl = document.querySelector('#to-top');
 
 // throttle 로 함수 최적화 
 window.addEventListener('scroll',_.throttle(function(){
@@ -30,14 +31,28 @@ window.addEventListener('scroll',_.throttle(function(){
       opacity: 0 ,
       display:'none'
     });
+    gsap.to(toTopEl,.2 ,{
+      x:0
+    });
   } else{
     //badge 보이기
     gsap.to(badgeEl, .6 ,{
       opacity:1,
       display:'block'
     });
-  };
+    gsap.to(toTopEl,.2 ,{
+      x:100
+    });
+  }
 }, 300));
+
+// 화면 최상단으로 이동 버튼 
+
+toTopEl.addEventListener('click',function(){
+  gsap.to(window, .7 , {
+    scrollTo:0
+  });
+});
 //_.throttle(함수, 시간) 300 = 0.3s
 
 //화면에 delay로 요소 출력 
@@ -140,3 +155,6 @@ spyEls.forEach(function (spyEl) {
     .setClassToggle(spyEl ,'show')
     .addTo(new ScrollMagic.Controller());
 });
+
+const thisYear = document.querySelector('.this-year');
+thisYear.textContent = new Date().getFullYear //2021 
