@@ -8,7 +8,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Starbucks" />
 <meta property="og:title" content="Starbucks Coffee Korea" />
-<meta property="og:description" content="스타벅스는 세계에서 가장 큰 다국적 커피 전문점으로, 64개국에서 총 23,187개의 매점을 운영하고 있습니다." />
+<meta property="og:description" content="스타벅스는 세계에서 가장 큰 다국적 커피 전문점으로. 64개국에서 총 23,187개의 매점을 운영하고 있습니다." />
 <meta property="og:image" content="./images/starbucks_seo.jpg" />
 <meta property="og:url" content="https://starbucks.co.kr" />
 ```
@@ -32,10 +32,14 @@
 ## swiper js -> https://swiperjs.com/ 
 - vertical 수직슬라이드 생성 
 
-## youtubeiframe js ->"https://www.youtube.com/iframe_api";
+## youtubeiframe js ->"https://www.youtube.com/iframe_api"
 - 페이지 내 배너 동영상 출력 
 
 ## ScrollMagic js -> https://cdnjs.com/libraries/ScrollMagic
 - 화면 요소 순차적 출력
-## ScrollToPlugIn -> https://cdnjs.com/libraries/ScrollMagic
+## ScrollToPlugIn -> https://cdnjs.com/libraries/SfcrollMagic
 - 화면 최 상단으로 이동
+
+
+
+## 버전관리
